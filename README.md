@@ -32,14 +32,14 @@
 
 # git 相关的命令
 
----
 
 1. `git init` (初始化一个本地仓库)
 2. `git add .` (将所有文件加入到跟踪列表)
 3. `git commit -m "write something title" (提交到本地仓库)
 4. `git status` (查看git文件哪处发生改动)
 5. `git remote add origin git@github.com:github账户名/github创建的库.git`(将本地仓库关联到github上远程仓库)
-6. `git push -u origin master` (将本地仓库的所有内容推送到远程库上，下一次推送时命令去掉 `-u`)
+6. `git push -u origin master` (将本地仓库的所有内容推送到远程库上，下一次推送时直接 `git push`)
+
 
 
 
