@@ -1,7 +1,6 @@
 # Vagrant配置
 
 
-
 1. 安装vagrant[下载](https://www.vagrantup.com/downloads.html),virtualbox,SecureCRTP[下载](http://download.pchome.net/internet/telnet/download-54.html)
 
 2. 安装vagrant和virtualBox
@@ -49,20 +48,48 @@
 1. `git config --global user.name "Your Name"` (安装完git后，设置用户名与邮箱)
 
 2. `git config --global user.email "Your email"` (设置邮箱)
+
+3. `ssh-keygen -t rsa -C "youremail@example.com"` (创建 SSH key)
+
+5. `ssh-agent -s` (查看 ssh 是否启用)
+
+6. `ssh -T git@github.com` (验证)
  
-3. `git init` (初始化一个本地仓库)
+7. `git init` (初始化一个本地仓库)
 
-4. `git add .` (将所有文件加入到跟踪列表)
+8. `git add .` (将所有文件加入到跟踪列表)
 
-5. `git commit -m "write something title"` (提交到本地仓库)
+9. `git commit -m "write something title"` (提交到本地仓库)
 
-6. `git status` (查看git文件哪处发生改动)
+10. `git status` (查看git文件哪处发生改动)
 
-7. `git remote add origin git@github.com:github账户名/github创建的库.git`(将本地仓库关联到github上远程仓库)
+11. `git remote add origin git@github.com:github账户名/github创建的库.git`(将本地仓库关联到github上远程仓库)
 
-8. `git push -u origin master` (将本地仓库的所有内容推送到远程库上，下一次推送时直接 `git push`)
+12. `git push -u origin master` (将本地仓库的所有内容推送到远程库上，下一次推送时直接 `git push`)
 
-9. `git clone URL` (克隆远程仓库)
+13. `git clone URL` (克隆远程仓库)
+
+14. `git branch` (查看当前分支)
+
+15. `git checkout -- filename` (文件恢复到最新版本，但丢失最近一次提交后你修改的内容)
+
+16. `git checkout name` (切换分支，name 为分支名称)
+
+
+# vim 相关命令
+
+
+1. `vim filename` (打开编辑文件)
+
+2. 按一下`i`键 (进行编辑文件)
+
+3. 按一下`Esc`键 (退出i(插入)命令进行其它命令使用)
+
+4. `:wq` (保存文件并退出)
+
+5. `:q!` (强制退出,不保存)
+
+6. `: w filename` (将文章以指定的文件名filename保存)
 
 
 
