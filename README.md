@@ -51,29 +51,29 @@
 
 3. `ssh-keygen -t rsa -C "youremail@example.com"` (创建 SSH key)
 
-5. `ssh-agent -s` (查看 ssh 是否启用)
+4. `ssh-agent -s` (查看 ssh 是否启用)
 
-6. `ssh -T git@github.com` (验证)
+5. `ssh -T git@github.com` (验证)
  
-7. `git init` (初始化一个本地仓库)
+6. `git init` (初始化一个本地仓库)
 
-8. `git add .` (将所有文件加入到跟踪列表)
+7. `git add .` (将所有文件加入到跟踪列表)
 
-9. `git commit -m "write something title"` (提交到本地仓库)
+8. `git commit -m "write something title"` (提交到本地仓库)
 
-10. `git status` (查看git文件哪处发生改动)
+9. `git status` (查看git文件哪处发生改动)
 
-11. `git remote add origin git@github.com:github账户名/github创建的库.git`(将本地仓库关联到github上远程仓库)
+10. `git remote add origin git@github.com:github账户名/github创建的库.git`(将本地仓库关联到github上远程仓库)
 
-12. `git push -u origin master` (将本地仓库的所有内容推送到远程库上，下一次推送时直接 `git push`)
+11. `git push -u origin master` (将本地仓库的所有内容推送到远程库上，下一次推送时直接 `git push`)
 
-13. `git clone URL` (克隆远程仓库)
+12. `git clone URL` (克隆远程仓库)
 
-14. `git branch` (查看当前分支)
+13. `git branch` (查看当前分支)
 
-15. `git checkout -- filename` (文件恢复到最新版本，但丢失最近一次提交后你修改的内容)
+14. `git checkout -- filename` (文件恢复到最新版本，但丢失最近一次提交后你修改的内容)
 
-16. `git checkout name` (切换分支，name 为分支名称)
+15. `git checkout name` (切换分支，name 为分支名称)
 
 
 # vim 相关命令
@@ -91,7 +91,18 @@
 
 6. `: w filename` (将文章以指定的文件名filename保存)
 
+# 实现vistualbox ubuntu 与win7共享文件步骤：
 
+1. 在vistualbox ubuntu 界面的左上角的设置——》共享文件夹——》选择一个在本机上的文件夹位置——》设置一个文件名称
+
+2. 进入Ubuntu终端 在命令行中输入
+
+	sudo mkdir /mnt/share (在mnt目录下创建一个share文件夹)
+
+	sudo mount -t vboxsf name(创建共享文件夹的名称) /mnt/share 
+
+3. 使用cp命令实现文件的复制，把在其他文件夹下的目录复制到 /mnt/share,即实现文件共享在win7本机上也会看到该文件
+	cp -r 复制文件名 /mnt/share(共享文件夹位置)
 
 
 
